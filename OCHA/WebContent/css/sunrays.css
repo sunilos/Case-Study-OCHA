@@ -1,0 +1,83 @@
+H1 {
+	font-family: 'Helvetica Neue', Helvetica, Arial;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 32px;
+	word-spacing: 0px;
+	background: 0% 0%;
+	display: block;
+	color: #333333;
+}
+
+H2 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+
+th {
+	text-align: left;
+}
+
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial;
+	font-size: 14px;
+	color: #555555;
+}
+
+.st-title {
+	font-family: 'Helvetica Neue', Helvetica, Arial;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 32px;
+	word-spacing: 0px;
+	background: 0% 0%;
+	display: block;
+	color: #333333;
+}
+
+.st-subtitle {
+	font-size: 20px;
+	font-weight: 600;
+}
+.st-error-header {
+	color: red;
+	font-size: 16px;
+}
+
+.st-error {
+	color: red;
+	font-size: 14px;
+}
+
+.error-header {
+	color: red;
+	font-size: 16px;
+}
+
+.error {
+	color: red;
+	font-size: 14px;
+}
+
+.st-success-header {
+	color: green;
+	font-size: 16px;
+}
+
+.st-success {
+	color: green;
+	font-size: 146px;
+}
+
+
+.success-header {
+	color: green;
+	font-size: 16px;
+}
+
+.success {
+	color: green;
+	font-size: 146px;
+}
