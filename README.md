@@ -1,4 +1,4 @@
-# SOS-OCHA
+# Case Study-OCHA
 Online College Help-desk Application
 ########################################################
 This is an Eclipse Juno project.  
