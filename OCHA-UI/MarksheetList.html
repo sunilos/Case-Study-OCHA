@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ORS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar" style="height:40px ;  color:white ; background-color:#007bff;">
+
+        <img src="../img/logo.png" height="30">
+        <a class="navbar-brand h1 ml-2" href="#">ORS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Marksheet
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="GetMarksheet.html">Get Marksheet</b></a>
+                        <a class="dropdown-item" href="MarksheetMeritList.html">Marksheet MeritList</b>
+                        <a class="dropdown-item"  href="Marksheet.html">Add Marksheet</b></a>
+                        <a class="dropdown-item" href="MarksheetList.html">Marksheet List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        User
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="NotFound.html">Add User</b></a>
+                        <a class="dropdown-item" href="NotFound.html">User List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        College
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="NotFound.html">Add College</b></a>
+                        <a class="dropdown-item" href="NotFound.html">College List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Student
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="NotFound.html">Student College</b></a>
+                        <a class="dropdown-item" href="NotFound.html">Student List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Role
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="NotFound.html">Role College</b></a>
+                        <a class="dropdown-item" href="NotFound.html">Role List</b></a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="NotFound.html">Java Doc</span></a>
+                </li>
+            </ul>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Welcome Ram kumar
+                        </a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="MyProfile.html">MyProfile</b></a>
+                            <a class="dropdown-item" href="ChangePassword.html">Change Password</b></a>
+                            <a class="dropdown-item" href="index.html">Logout</b></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container_fluid m-4">
+        <div class="row border-bottom">
+            <div class="col">
+                <h4 class="my-1">MarksheetList</h4>
+            </div>
+            <div class="col">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end my-1">
+                        <li class="page-item">
+                            <button class="btn btn-outline-primary btn-sm">Page</button>
+                        </li>
+                        <li class="page-item">
+                            <select class="form-control form-control-sm text-primary border-primary">
+                                <option>1</option>
+                                <option>2</option>        
+                                <option>3</option>                                     
+                            </select>
+                        </li>
+                        <li class="page-item">
+                            <button class="btn btn-outline-primary btn-sm" "><i
+                                    class="fas fa-angle-double-left "></i></button>
+                        </li>
+                        <li class="page-item ">
+                            <button class="btn btn-outline-primary btn-sm " ><i
+                                    class="fas fa-angle-double-right "></i></button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <form class="form-inline my-2 ">
+            <label for="name " class="ml-sm-2 ">Name </label>
+            <input type="text " name="name " id="name " class="form-control form-control-sm ml-2 " placeholder="Name " [(ngModel)]="form.searchParams.name ">
+            <label for="rollNo " class="ml-sm-2 ">Roll No</label>
+            <input class="form-control form-control-sm ml-sm-2 " type="text " name="rollNo " id="rollNo " placeholder="address ">
+            <button onclick="search() " class="btn btn-outline-primary btn-sm ml-2 "><i class="fa fa-search-plus "></i>
+                Search
+            </button>
+        </form>
+        <div class="table-responsive ">
+            <table class="table table-sm table-striped my-1 ">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>ID</th>
+                        <th>RollNo</th>
+                        <th>Name</th>
+                        <th>Physics</th>
+                        <th>Chemistry</th>
+                        <th>Maths</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>1</td>
+                        <td>B111</td>
+                        <td>Vipul Baser</td>
+                        <td>99</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Marksheet.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " />
+                        </td>
+                        <td>2</td>
+                        <td>A111</td>
+                        <td>Ashutosh Upadhyay</td>
+                        <td>99</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Marksheet.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>3</td>
+                        <td>A1</td>
+                        <td>ABBY</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td>99</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Marksheet.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>Rajesh Verma</td>
+                        <td>99</td>
+                        <td>77</td>
+                        <td>99</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Marksheet.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>5</td>
+                        <td>18</td>
+                        <td>mohan lal</td>
+                        <td>88</td>
+                        <td>89</td>
+                        <td>88</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Marksheet.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>Ashish Nehra</td>
+                        <td>88</td>
+                        <td>88</td>
+                        <td>88</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Marksheet.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td>mohan lal</td>
+                        <td>77</td>
+                        <td>77</td>
+                        <td>77</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Marksheet.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>Manish Sharma</td>
+                        <td>66</td>
+                        <td>66</td>
+                        <td>66</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Marksheet.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>9</td>
+                        <td>21</td>
+                        <td>Manish Sharma</td>
+                        <td>58</td>
+                        <td>58</td>
+                        <td>59</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Marksheet.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="50px ">
+                            <input type="checkbox" class="form-control form-control-sm " id="ids " placeholder="ids ">
+                        </td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>Rajendra Manli</td>
+                        <td>55</td>
+                        <td>55</td>
+                        <td>55</td>
+                        <td align="right ">
+                            <div class="row ">
+                                <a href="Marksheet.html?id=1 " class="btn btn-outline-success btn-sm ">
+                                    <i class="fa fa-edit "></i>Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="row border-bottom ">
+
+                <div class="col ">
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination justify-content-end my-1 ">
+                            <li class="page-item ">
+                                <button class="btn btn-outline-primary btn-sm ">Page</button>
+                            </li>
+                            <li class="page-item ">
+                                <select class="form-control form-control-sm text-primary border-primary ">
+                                    <option>1</option>
+                                    <option>2</option>        
+                                    <option>3</option>                                     
+                                </select>
+                            </li>
+                            <li class="page-item ">
+                                <button class="btn btn-outline-primary btn-sm " "><i class="fas fa-angle-double-left "></i></button>
+                        </li>
+                        <li class="page-item ">
+                            <button class="btn btn-outline-primary btn-sm "><i
+                                        class="fas fa-angle-double-right "></i></button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <p class="text-center">© 2017, Rays Technologies, SunilOS Infotech Pvt Ltd. </p>
+    </div>
+    </div>
+</body>
+
+</html>

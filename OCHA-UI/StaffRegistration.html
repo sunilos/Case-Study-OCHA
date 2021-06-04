@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OCHA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"
+        style="height:40px ;  color:white ; background-color:#007bff;">
+
+        <img src="../img/logo.png" height="30">
+        <a class="navbar-brand h1 ml-2" href="#">OCHA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Login.html.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+               
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container_fluid m-4">
+        <div class="container border col-sm-6">
+
+            <h4 class="border-bottom pt-2">Staff Registration</h4>
+
+            <div class="alert alert-danger">
+                <strong>
+                    Registered error
+                </strong>
+
+            </div>
+            <div class="alert alert-success">
+                <strong>
+                    Registered successfull
+                </strong>
+
+            </div>
+
+            <form class="was-validated">
+                <input type="hidden" name="id" value="0">
+                <input type="hidden" name="createdBy" value="root">
+                <input type="hidden" name="modifiedBy" value="root">
+                <input type="hidden" name="createdDatetime" value="1613535683663">
+                <input type="hidden" name="modifiedDatetime" value="1613535683663">
+
+                <div class="form-group form-row">
+
+                    <label for="firstName" class="col-sm-2 col-form-label col-form-label-sm col">
+
+                        First Name <i class="fas fa-asterisk" style="color:red"></i>
+
+                    </label>
+
+                    <div class="col">
+
+                        <input class="form-control form-control-sm" type="text" id="firstName" name="firstName"
+                            placeholder="First Name" required>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group form-row">
+
+                    <label for="lastName" class="col-sm-2 col-form-label col-form-label-sm col">
+
+                        Last Name <i class="fas fa-asterisk" style="color:red"></i>
+
+                    </label>
+
+                    <div class="col">
+
+                        <input class="form-control form-control-sm" type="text" id="lastName" name="lastName"
+                            placeholder="Last Name" required>
+
+                    </div>
+
+                </div>
+                <div class="form-group form-row">
+
+                    <label for="departement" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Dept <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <select class="form-control form-control-sm" name='departement'>
+                            <option selected value=''>--Select--</option>
+                            <option>IT</option>
+                            <option>CS</option>
+                            <option>other</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group form-row">
+
+                    <label for="fatherName" class="col-sm-2 col-form-label col-form-label-sm col">
+
+                        Father<i class="fas fa-asterisk" style="color:red"></i>
+
+                    </label>
+
+                    <div class="col">
+
+                        <input class="form-control form-control-sm" type="text" id="fatherName" name="fatherName"
+                            placeholder="Father Name" required>
+
+                    </div>
+
+                </div>
+                <div class="form-group form-row">
+
+                    <label for="motherName" class="col-sm-2 col-form-label col-form-label-sm col">
+
+                        Mother <i class="fas fa-asterisk" style="color:red"></i>
+
+                    </label>
+
+                    <div class="col">
+
+                        <input class="form-control form-control-sm" type="text" id="motherName" name="motherName"
+                            placeholder="Mother Name" required>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group form-row">
+
+                    <label for="loginId" class="col-sm-2 col-form-label col-form-label-sm col">
+
+                        Login ID <i class="fas fa-asterisk" style="color:red"></i>
+
+                    </label>
+
+                    <div class="col">
+
+                        <input class="form-control form-control-sm" type="text" id="loginId" name="loginId"
+                            placeholder="Login ID" required>
+
+                    </div>
+
+                </div>
+                <div class="form-group form-row">
+
+                    <label for="password" class="col-sm-2 col-form-label col-form-label-sm col">
+
+                        Password <i class="fas fa-asterisk" style="color:red"></i>
+
+                    </label>
+
+                    <div class="col">
+
+                        <input class="form-control form-control-sm" type="text" id="password" name="password"
+                            placeholder="Password" required>
+
+                    </div>
+
+                </div>
+                <div class="form-group form-row">
+
+                    <label for="ConfirmPassword" class="col-sm-2 col-form-label col-form-label-sm col">
+
+                        CP <i class="fas fa-asterisk" style="color:red"></i>
+
+                    </label>
+
+                    <div class="col">
+
+                        <input class="form-control form-control-sm" type="text" id="confirmPassword"
+                            name="confirmPassword" placeholder="confirm password" required>
+
+                    </div>
+
+                </div>
+                <div class="form-group form-row">
+
+                    <label for="gender" class="col-sm-2 col-form-label col-form-label-sm col">
+                        Gender <i class="fas fa-asterisk" style="color:red"></i>
+                    </label>
+                    <div class="col">
+                        <select class="form-control form-control-sm" name='gender'>
+                            <option selected value=''>--Select--</option>
+                            <option>female</option>
+                            <option>male</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group form-row">
+
+                    <label for="dob" class="col-sm-2 col-form-label col-form-label-sm col">
+
+                        DOB <i class="fas fa-asterisk" style="color:red"></i>
+
+                    </label>
+
+                    <div class="col">
+
+                        <input class="form-control form-control-sm" type="date" id="dob" name="dob" required>
+
+                    </div>
+
+                </div>
+                <div class="form-group form-row">
+
+                    <label for="mobileNo" class="col-sm-2 col-form-label col-form-label-sm col">
+
+                        Mobile No <i class="fas fa-asterisk" style="color:red"></i>
+
+                    </label>
+
+                    <div class="col">
+
+                        <input class="form-control form-control-sm" type="text" id="mobileNo" name="mobileNo"
+                            placeholder="Mobile No" required>
+
+                    </div>
+
+                </div>
+                <div class="form-group form-row">
+
+                    <label for="address" class="col-sm-2 col-form-label col-form-label-sm col">
+
+                        Address <i class="fas fa-asterisk" style="color:red"></i>
+
+                    </label>
+
+                    <div class="col">
+
+                        <input class="form-control form-control-sm" type="text" id="address" name="address"
+                            placeholder="Address" required>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-group form-row justify-content-end">
+                    <button type="submit" class="btn btn-outline-primary btn-sm"><i class="fa fa-save"></i>
+                        Save
+                    </button> &nbsp;
+                    <button type="reset" class="btn btn-outline-primary btn-sm"> <i class="fa fa-window-close"></i>
+                        Cancel
+                    </button> &nbsp;
+
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <p class="d-flex justify-content-center">© 2017, Rays Technologies, SunilOS Infotech Pvt Ltd. </p>
+</body>
+
+</html>
